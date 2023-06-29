@@ -1,0 +1,2 @@
+class lavlf_3 {
+}
