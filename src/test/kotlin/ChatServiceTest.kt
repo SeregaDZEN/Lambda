@@ -78,8 +78,8 @@ class ChatServiceTest {
         //val result2 = mutableListOf(Chat())
         val listString = mutableListOf(
             "Chat(messages=[Message(text=hi, isRead=false," +
-                    " idMessage=1, incoming=true), Message(text=hoy," +
-                    " isRead=false, idMessage=2, incoming=true)])"
+                    " idMessage=9, incoming=true), Message(text=hoy," +
+                    " isRead=false, idMessage=10, incoming=true)])"
         )
         assertEquals(result.toString(), listString.toString()) // фуф, как долго думал тут...
 

@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ca15f45-5dbe-4640-86e2-8c8fb8c51848" name="Changes" comment="change Test" />
+    <list default="true" id="5ca15f45-5dbe-4640-86e2-8c8fb8c51848" name="Changes" comment="change Test3">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,7 +69,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
-    "last_opened_file_path": "C:/Users/fezar/Kotlin/Lambda",
+    "last_opened_file_path": "C:/Users/fezar/Kotlin/OOP",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -224,11 +226,27 @@
       <option name="project" value="LOCAL" />
       <updated>1688454197796</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="change Test2">
+      <created>1688454359142</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1688454359142</updated>
+    </task>
+    <task id="LOCAL-00003" summary="change Test3">
+      <created>1688454536194</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1688454536194</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="change Test" />
-    <option name="LAST_COMMIT_MESSAGE" value="change Test" />
+    <MESSAGE value="change Test2" />
+    <MESSAGE value="change Test3" />
+    <option name="LAST_COMMIT_MESSAGE" value="change Test3" />
   </component>
 </project>
