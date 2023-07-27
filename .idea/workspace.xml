@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ca15f45-5dbe-4640-86e2-8c8fb8c51848" name="Changes" comment="change Test4">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ASSa.kt" afterDir="false" />
+    <list default="true" id="5ca15f45-5dbe-4640-86e2-8c8fb8c51848" name="Changes" comment="get Fun allMessagesInChats">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ChatService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ChatService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/La.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/La.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/lAvvcv.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lAvvcv.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/lavlf_3.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lavlf_3.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/ChatServiceTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/ChatServiceTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +47,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -226,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688454852368</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="get Fun allMessagesInChats">
+      <created>1690465456371</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1690465456371</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -234,6 +239,7 @@
     <MESSAGE value="change Test2" />
     <MESSAGE value="change Test3" />
     <MESSAGE value="change Test4" />
-    <option name="LAST_COMMIT_MESSAGE" value="change Test4" />
+    <MESSAGE value="get Fun allMessagesInChats" />
+    <option name="LAST_COMMIT_MESSAGE" value="get Fun allMessagesInChats" />
   </component>
 </project>
