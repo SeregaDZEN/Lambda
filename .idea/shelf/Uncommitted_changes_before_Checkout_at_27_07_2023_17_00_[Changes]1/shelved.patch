@@ -1,0 +1,227 @@
+Index: src/main/kotlin/Person.kt
+===================================================================
+diff --git a/src/main/kotlin/Person.kt b/src/main/kotlin/Person.kt
+deleted file mode 100644
+--- a/src/main/kotlin/Person.kt	
++++ /dev/null	
+@@ -1,18 +0,0 @@
+-//data class Person(var name: String, var age: Int, var city: String) {
+-//    fun moveTo(newCity: String) {
+-//        city = newCity
+-//    }
+-//
+-//    fun incrementAge() {
+-//        age++
+-//    }
+-//}
+-//
+-//fun main() {
+-//    val d = Person("Alice", 20, "Amsterdam")
+-//    println(d)
+-//    d.moveTo("London")
+-//    d.incrementAge()
+-//    println(d)
+-//
+-//}
+Index: src/main/kotlin/lavlf_3.kt
+===================================================================
+diff --git a/src/main/kotlin/lavlf_3.kt b/src/main/kotlin/lavlf_3.kt
+deleted file mode 100644
+--- a/src/main/kotlin/lavlf_3.kt	
++++ /dev/null	
+@@ -1,33 +0,0 @@
+-import java.io.Serializable
+-import kotlin.Pair
+-
+-fun main (){
+-        val regex = "\\s+".toRegex()  // 1 or more whitespace character (space, tabs etc.)
+-        val str = "1 2\t\t3  4\t5  6"
+-    val nums = str.split(regex).map { it.toInt() }.toMutableList()
+-    println(nums.joinToString()) // 1, 2, 3, 4, 5, 6
+-
+-    val aa = mutableMapOf(1 to "Sting")
+-
+-val position : Pair<Double,Double> = 55.55 to 37.6
+-    println(position)
+-
+-    val posit : Loc = 22.22 x 22.22
+-    println(posit)
+-
+-    val ress : Loc = posit  + Loc(1.0, 1.0)
+-    println(ress)
+-}
+- data class Loc(val lat : Double, val long : Double)
+-infix fun Double.x(that : Double) = Loc(this, that) // пара
+-
+-operator fun Loc.plus(other : Loc) = Loc(lat= lat + other.lat, long = long + other.long)
+-
+-inline fun <T> MutableList(
+-    size: Int,
+-    init: (index: Int) -> T
+-) {
+-
+-}
+-
+-
+Index: src/main/kotlin/La.kt
+===================================================================
+diff --git a/src/main/kotlin/La.kt b/src/main/kotlin/La.kt
+deleted file mode 100644
+--- a/src/main/kotlin/La.kt	
++++ /dev/null	
+@@ -1,39 +0,0 @@
+-  typealias DD = (Double) -> Double
+-
+-fun convert(
+-    x: Double,
+-    converter: DD
+-): Double {
+-    val result = converter(x)
+-    println("$x is converted to $result")
+-    return result
+-}
+-
+-fun getConversionLambda(str: String): DD {
+-    if (str == "CentigradeToFahrenheit") {
+-        return { it * 1.8 + 32 }
+-    } else if (str == "KgsToPounds") {
+-        return { it * 2.204623 }
+-    } else if (str == "PoundsToUSTons") {
+-        return { it / 2000.0 }
+-    } else {
+-        return { it }
+-    }
+-}
+-
+-
+-fun combine(lambda1: DD, lambda2: DD): DD {
+-    return { x: Double -> lambda2(lambda1(x)) }
+-}
+-
+-fun main(args: Array<String>) {
+-
+-    val square: DD = { x -> x * x }
+-    val increment: DD = { x -> x + 1 }
+-
+-    val combined: DD = combine(square, increment)
+-
+-    val result = combined(5.0)
+-    println("Result: $result") // Output: Result: 26.0
+-
+-}
+Index: src/main/kotlin/ASSa.kt
+===================================================================
+diff --git a/src/main/kotlin/ASSa.kt b/src/main/kotlin/ASSa.kt
+deleted file mode 100644
+--- a/src/main/kotlin/ASSa.kt	
++++ /dev/null	
+@@ -1,6 +0,0 @@
+-fun main(){
+-
+-    val numberFlow = listOf(1, 2, 3, 4, 5)
+-    val reducedValue = numberFlow.reduce{ a, b -> a + b }
+-    println(reducedValue)   // 15
+-}
+\ No newline at end of file
+Index: src/main/kotlin/lAvvcv.kt
+===================================================================
+diff --git a/src/main/kotlin/lAvvcv.kt b/src/main/kotlin/lAvvcv.kt
+deleted file mode 100644
+--- a/src/main/kotlin/lAvvcv.kt	
++++ /dev/null	
+@@ -1,94 +0,0 @@
+-fun main() {
+-
+-////    val c : String = "1234"
+-////    println( c.lastIndex)
+-////    println( c.length)
+-////
+-////
+-////val a =  A(1)
+-////    a.age = 11
+-////    println(a.age)
+-//    val rr = mutableListOf("2",1, false,Post())
+-//
+-//
+-//    val rrr : MutableCollection<Any> = rr
+-//
+-//
+-//
+-//
+-//    val list = mutableListOf(1, 2, 3)
+-//    println(list)
+-//    list.swap(0, 1)
+-//    println(list)
+-//    list.noop()
+-//
+-//
+-//    val col : MutableCollection<Int> = list
+-//    col.noop()
+-//
+-//
+-//    val strLisst = mutableListOf("one", "two")
+-//    println(strLisst)
+-//    strLisst.swap(0, 1)
+-//    println(strLisst)
+-    val a1 = Pi(1, 1)
+-    val a2 = Pi(1, 1)
+-    println(a1.hashCode())
+-    println(a2.hashCode())
+-    println(a1 == a2)
+-    println(a1 === a2)
+-
+-    val listPost = mutableListOf(Post(1, 2), Post(2, 2), Post(3, 0))
+-
+-    val l = listPost.filter(fun(post: Post) = post.like > 0)
+-    println(l)
+-    listPost.filter { it.like > 0 }
+-    listPost.filterIndexed { _, post -> post.like > 0 }
+-}
+-
+-
+-
+-fun <E> MutableList<E>.swap(index0: Int, index1: Int) {
+-    val e0 = get(index0)
+-    val e1 = get(index1)
+-
+-    this[index0] = e1
+-    this[index1] = e0
+-
+-
+-}
+-
+-fun <E> MutableList<E>.noop() {
+-    println("list")
+-}
+-
+-fun <E> MutableCollection<E>.noop() {
+-    println("col")
+-}
+-
+-class A(val a: Int) {
+-    var age: Int = 18
+-        set(value) {
+-            println("Call setter")
+-            if ((value > 0) and (value < 110))
+-                field = value
+-        }
+-        get() {
+-            println("Call getter")
+-            println(field)
+-            return field
+-        }
+-
+-}
+-
+-val <T> List<T>.lastIndex: Int
+-    get() = this.size - 1
+-
+-data class Post(val id: Int, val like: Int)
+-
+-fun printAll(strings: MutableCollection<String>) {
+-    for (s in strings) print("$s ")
+-    println()
+-}
+-
+-data class Pi(val pi: Int, val li: Int)
+\ No newline at end of file
