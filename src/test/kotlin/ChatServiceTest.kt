@@ -54,7 +54,7 @@ class ChatServiceTest {
     fun getCountOfUnreadChats() {
         chatService.sendMessages(1, "hi")
         chatService.sendMessages(1, "hi - hi")
-        val result = chatService.getCountOfUnreadChats(1)
+        val result = chatService.getCountOfUnreadChats()
 
         assertEquals(result, 1)
     }
@@ -93,6 +93,11 @@ class ChatServiceTest {
         val result = chatService.getTextLastChats()
         val result2 = mutableListOf("hoy")
       assertEquals(result,result2)
+
+    }
+
+    @Test
+    fun allMessagesInChats() {
 
     }
 }
